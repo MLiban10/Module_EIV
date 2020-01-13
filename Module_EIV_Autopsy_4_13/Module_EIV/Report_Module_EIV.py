@@ -46,9 +46,12 @@ from org.sleuthkit.autopsy.ingest import IngestModuleGlobalSettingsPanel
 from org.sleuthkit.datamodel import BlackboardArtifact
 from org.sleuthkit.datamodel import BlackboardAttribute
 from org.sleuthkit.datamodel import ReadContentInputStream
+
+from org.sleuthkit.autopsy.ingest import ModuleDataEvent
 from org.sleuthkit.autopsy.coreutils import Logger
 from java.lang import IllegalArgumentException
 import json,csv
+from org.sleuthkit.autopsy.coreutils import PlatformUtil
 # TODO: Rename this to something more specific
 class EmailFileIngestModuleWithUIFactory(IngestModuleFactoryAdapter):
     def __init__(self):
