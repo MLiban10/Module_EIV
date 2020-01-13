@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>EIV - Report</title>  
+		   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+           <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css"/>  
+           <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>  
+      </head>  
+      <body>  
+           <br /><br />  
+            <div class="container">  
+                <h1 align="center">EMAIL INTEGRITY VALIDATOR</h1><br />  
+                <h3 align="center">DKIM Validation</h3><br />  
+                <table id="datatable" class="table table-bordered">  
+                     <thead>  
+                          <tr>  
+                               <th>Filename</th>  
+                               <th>Time</th>  
+                               <th>Status</th>
+                               <th>Motive</th>  
+                          </tr>  
+                     </thead>  
+                </table>  
+           </div>  
+      </body>  
+ </html>  
+ <script>
+$(document).ready(function(){  
+      $('#datatable').DataTable({  
+           "ajax"     :     "./output.json",  
+           "columns"     :     [  
+                {     "data"     :     "filename"     },  
+                {     "data"     :     "time"         },  
+                {     "data"     :     "status"       },  
+                {     "data"     :     "motive"       }
+           ]  
+      }); 
+ });  
+ </script>  

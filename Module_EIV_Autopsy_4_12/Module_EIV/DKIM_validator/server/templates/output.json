@@ -1,0 +1,4 @@
+{"data":[{"filename":"C:/Users/Joao Marquez/Desktop/Mestrado/P1/DKIMValidator/Emails/Teste-DKIM-2015.eml","time":"Sun Jan 12 18:18:42 2020","status":"INVALID","motive":"x= value is past "},
+{"filename":"C:/Users/Joao Marquez/Desktop/Mestrado/P1/DKIMValidator/Emails/Teste-DKIM.eml","time":"Sun Jan 12 18:18:43 2020","status":"INVALID","motive":"b= value is not valid base64 "},
+{"filename":"C:/Users/Joao Marquez/Desktop/Mestrado/P1/DKIMValidator/Emails/Teste-DKIM2.eml","time":"Sun Jan 12 18:18:43 2020","status":"VALID","motive":""},
+{"filename":"C:/Users/Joao Marquez/Desktop/Mestrado/P1/DKIMValidator/Emails/Teste.eml","time":"Sun Jan 12 18:18:43 2020","status":"VALID","motive":""}]}

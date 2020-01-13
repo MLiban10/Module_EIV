@@ -1,0 +1,5 @@
+mail-parser
+dkimpy
+flask
+flask-cors
+requests
