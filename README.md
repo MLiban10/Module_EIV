@@ -4,7 +4,7 @@ Information:
  
 ## Setup:
  1. Have python3 installed
- 2. Have Autopsy v4.12 installed
+ 2. Have Autopsy v4.12 or v4.13 installed
  3. Access "Module_EIV" folder and run "python -m pip install -r req_packages.txt --user"
  4. Copy Module_EIV folder to autopsy python modules folder
  
